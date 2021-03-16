@@ -1,0 +1,19 @@
+TODO:
+
++ regular update of all settings in case some other source does
+  also change the camera state (e.g. brightness, ...)
++ command line options to choose the proc-file
++ some usage/help stuff
++ man page
+- all the error handling
+- many layout things are plain ugly
+- handle keyboard interrupts
++ manual exposure control
++ manual color balance control
+- honor proc min/max values
+- vertically flip brighness/color/contrast
+- modularize stuff (create radio-button class, etc)
++ configure/install stuff
++ load/save of state
+- keyboard accelerators
+- use itemfactory to create menus

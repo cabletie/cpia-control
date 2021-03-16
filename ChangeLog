@@ -1,0 +1,81 @@
+2004-01-18  Peter Pregler  <Peter_Pregler@email.com>
+
+	* cpia_control.py
+	   - works now with pygtk mechanism to select gtk version 1.2
+	   - bumped version to 0.5.1
+
+2002-12-05 Duncan Haldane <duncan_haldane@users.sourceforge.net>
+	* cpia_control.py
+	   - made ecp_timing only show for parallel port cameras.
+	   - added control of new key "usb_alt_setting" that allows
+	     usb bandwidth to be reduced (new cpia driver feature,
+	     needed when using multiple cameras on same usb hub).
+	   - version is now 0.5
+2002-10-14 Duncan Haldane <duncan_haldane@users.sourceforge.net>
+	* cpia_control.py:
+	  - cleaned up slider code to take min and max values from /proc/cpia
+	  - bump version to 0.4
+	  - added support for setting decimation_enable, sub_sample, 
+	    yuv_order, ecp_timing
+
+2000-08-22  Peter Pregler  <Peter_Pregler@email.com>
+
+	* cpia_control.py: New minor version 0.3.3.
+
+	* libcpia.py:
+	  - class status: variables were static instead of instance specific
+	  - max-gain hack changed to compression_mode, thought I really
+	    corrected that!
+
+	* cpia_control.py: added support for Intel QX3 microscope lights
+	  Thanx to Nick Lopez (kimo_sabe@atdot.org) for the first patch!
+
+2000-08-22  Peter Pregler  <Peter_Pregler@email.com>
+
+	* README: added reference to official kernel
+
+	* libcpia.py: max_gain hack
+
+	* cpia_control.py: updated version
+	exit needs module sys
+
+2000-04-23  Peter Pregler  <Peter_Pregler@email.com>
+
+	* corrected wrong version in about
+	* max_gain hack again
+
+2000-03-24  Peter Pregler  <Peter_Pregler@email.com>
+
+	* slight backward compatibility in read min/max/default
+
+2000-03-23  Peter Pregler  <Peter_Pregler@email.com>
+
+	* added callbacks for all status elements, partially
+	  really ugly code!
+	* cpia_control.py: CheckButton set_state -> set_active
+	* various other bug-fixes, especially with check-buttons 
+	  and radio-buttons
+	
+2000-03-19  Peter Pregler  <Peter_Pregler@email.com>
+
+	* save/load state
+	* v4l-version in create_about
+	* debug switch
+	
+2000-03-12  Peter Pregler  <Peter_Pregler@email.com>
+
+        * first debian version
+	* makefile now supports precompilation
+	* split command-line processing / GUI in
+	  cpia_control.py and cpia-control
+	
+1999-12-12  Peter Pregler  <Peter_Pregler@email.com>
+
+	* features added:
+	  + usage
+	  + command-line parameter to choose proc-file
+	  + color balance notebook
+	  + exposure sliders
+	  + Gtkinter fallback
+	  + some helper functions
+	* about dialog now displays camera firmware versions

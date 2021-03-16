@@ -1,0 +1,65 @@
+This is a quick hack to control a CPiA based webcam via the proc
+interface.
+
+---> this stuff is not finished! <---
+
+   © [1]Peter Pregler, Linz 1999-2000, published under the [2]GNU GPL
+
+
+GET IT
+
+You can get the latest version from [3].
+
+DESCRIPTION:
+
+Control all settings of a CPiA based webcam via a nice GUI. This simple
+python-gtk application allows one to control a CPiA based webcam by
+means of a nice GUI. The settings are done by changing the
+proc-interface of the CPiA based webcam. Apart from such a webcam you
+need a special kernel-module to use this program. See the web-page[3]
+for more information. The driver is in the official kernel since
+version 2.2.15-pre15 and 2.3.99-pre4.
+
+NOTE: the USB cpia-driver in the development kernels 2.3.13 up to
+2.3.99-pre4 has no proc-interface. You need the driver from the
+web-page given above or an official kernel with a high enough version.
+
+REQUIREMENTS
+
+You will need python1.5 and python-gtk 0.6.2 or later. Most stuff might
+work with earlier versions of python-gtk (it was initially written with
+0.5.3). The reason for 0.6.2 is that it seems to be the first version
+with working threads which are used to update the camera status
+(fps/thruput). You might ask 'why python, why gtk?'. I was curious
+about both. So I thought this is a nice idea to learn it. It was, more
+or less. The moral: before I end as a GUI-programmer I will quit
+programming at all. But python and GTK are nice. ;)
+
+FEATURES
+
+- camera status (fps/thruput)
+- setting color/brighness/contrast
+- compression control (incl. manual/auto parameters)
+- flicker control settings
+- all possible sensor fps settings
+
+TRY IT OUT
+
+Just type 'cpia-control'.
+
+INSTALLATION
+
+Consult your local python manual. I have no idea what the standard
+search paths for python programs is in your distribution. This tarball
+is tailored to debian-linux.
+
+KNOWN PROBLEMS
+
+See TODO.
+
+REFERENCES
+
+   1. http://www.risc.uni-linz.ac.at/people/ppregler
+      mailto:Peter_Pregler@email.com
+   2. see the file COPYING
+   3. http://webcam.sourceforge.net/

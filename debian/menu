@@ -1,0 +1,2 @@
+?package(cpia-control):needs=X11 section=Apps/Graphics\
+  title="cpia-control" command="/usr/bin/cpia-control"

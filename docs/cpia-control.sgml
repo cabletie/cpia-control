@@ -1,0 +1,112 @@
+<!doctype refentry PUBLIC "-//Davenport//DTD DocBook V3.0//EN" [
+  <!ENTITY CpiaControl  "cpia-control">
+]>
+
+<!-- Manual page for cpia-control, DocBook source file
+     (C) 2000 Peter Pregler <Peter_Pregler@email.com>
+
+     $Id: cpia-control.sgml,v 1.1 2002/10/13 17:05:47 duncan_haldane Exp $ -->
+
+  <refentry>
+    <docinfo>
+      <address>
+	<email>Peter_Pregler@email.com</email>
+      </address>
+      <author>
+	<firstname>Peter</firstname>
+	<surname>Pregler</surname>
+      </author>
+      <date>2000-03-13</date>
+    </docinfo>
+    <refmeta>
+      <refentrytitle>&CpiaControl;</refentrytitle>
+      <manvolnum>1</manvolnum>
+    </refmeta>
+    <refnamediv>
+      <refname>&CpiaControl;</refname> <refpurpose>Control all settings of
+	a CPiA based webcam via a nice GUI.</refpurpose>
+    </refnamediv>
+    <refsynopsisdiv>
+      <cmdsynopsis>
+	<command>&CpiaControl;</command>
+	<arg><replaceable>-h</replaceable></arg>
+	<arg><replaceable>-d</replaceable></arg>
+	<arg><replaceable>proc-file</replaceable></arg>
+      </cmdsynopsis>
+    </refsynopsisdiv>
+    <refsect1>
+      <title>DESCRIPTION</title> <para>Control all settings of a CPiA
+      based webcam via a nice GUI. This simple python-gtk application
+      allows one to control a CPiA based webcam by means of a nice GUI.
+      The settings are done by changing the proc-interface of the CPiA
+      based webcam. Apart from a webcam you need a special
+      kernel-module to use this program. See the <ulink
+      URL="http://webcam.sourceforge.net">developers webpage</ulink>
+      for more information. Sometimes in the future the driver will be
+      part of the standard kernels.</para>
+    </refsect1>
+    <refsect1>
+      <title>OPTIONS</title><para>
+      <VARIABLELIST>
+	<VARLISTENTRY>
+	  <TERM><emphasis>-h</emphasis>
+	  </TERM>
+	  <LISTITEM>
+	    <PARA> Print a help message and exit.
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>
+	  <TERM><emphasis>-d</emphasis>
+	  </TERM>
+	  <LISTITEM>
+	    <PARA> Additional debug output.
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+	<VARLISTENTRY>
+	  <TERM><emphasis>proc-file</emphasis>
+	  </TERM>
+	  <LISTITEM>
+	    <PARA>Use this file instead of the default file-name
+	    <filename>/proc/cpia/video0</filename>.
+	    </PARA>
+	  </LISTITEM>
+	</VARLISTENTRY>
+      </VARIABLELIST></para>
+    </refsect1>
+    <refsect1>
+      <title>NOTES</title><para>
+      The USB cpia-driver in the development kernels 2.3.13 and
+      later has no proc-interface. You need the driver from the
+      web-page given above.</para>
+    </refsect1>
+    <refsect1>
+      <title>COPYRIGHT</title>
+      
+      <para>Copyright &copy; 1999-2000 Peter Pregler.</para>
+
+      <para> The program &CpiaControl; is licensed under the GNU
+	General Public License version 2 or higher. On Debian systems
+	the full text of these licences can be found in
+	/usr/share/common-licenses/GPL.</para>
+
+    </refsect1>
+
+  </refentry>
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: sgml
+sgml-omittag:t
+sgml-shorttag:t
+sgml-minimize-attributes:nil
+sgml-always-quote-attributes:t
+sgml-indent-step:2
+sgml-indent-data:t
+sgml-parent-document:nil
+sgml-default-dtd-file:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->

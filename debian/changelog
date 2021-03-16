@@ -1,0 +1,50 @@
+cpia-control (0.5.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Dependencies for debian woody so we get gtk-1.2.
+
+ -- Peter Pregler <Peter_Pregler@email.com>  Sat, 17 Jan 2004 17:26:20 +0100
+
+cpia-control (0.5-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Peter Pregler <Peter_Pregler@email.com>  Tue,  7 Jan 2003 21:43:37 +0100
+
+cpia-control (0.3.4-1) unstable; urgency=low
+
+  * Finally fixed problem with proc-interface in some kernels.
+
+ -- Peter Pregler <Peter_Pregler@email.com>  Sat, 17 Aug 2002 23:11:15 +0200
+
+cpia-control (0.3.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Peter Pregler <Peter_Pregler@email.com>  Tue, 22 Aug 2000 21:56:57 +0200
+
+cpia-control (0.3.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Peter Pregler <Peter_Pregler@email.com>  Sun, 23 Apr 2000 13:28:07 +0200
+
+cpia-control (0.3.1-1) unstable; urgency=low
+
+  * New upstream release. Bugfix only.
+
+ -- Peter Pregler <Peter_Pregler@email.com>  Fri, 24 Mar 2000 21:38:20 +0100
+
+cpia-control (0.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Peter Pregler <Peter_Pregler@email.com>  Thu, 23 Mar 2000 23:35:54 +0100
+
+cpia-control (0.2.1-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Peter Pregler <Peter_Pregler@email.com>  Thu, 16 Mar 2000 00:17:44 +0100
+
+
